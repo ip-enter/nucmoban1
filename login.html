@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>中北大学官方网站</title>
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<style>
+			/* Make the image fully responsive */
+			
+			.carousel-inner img {
+				width: 100%;
+				height: 410px;
+			}
+		</style>
+		<style>
+		
+			#container {
+				background: aquamarine;
+				height: 33px;
+				font-weight: 1920px;
+			}
+			
+			#kuang {
+				border-radius: 5px;
+				border: 1px solid lightgray;
+			}
+			
+			#erkuang {
+				background: white;
+				height: 160px;
+				font-weight: 1920px;
+			}
+			
+			#tu {
+				margin-top: 30px;
+				font-weight: 160px;
+				height: 90px;
+			}
+			
+			#zuo {
+				width: 300px;
+				height: 400px;
+				float: left;
+			}
+			
+			.dropbtn {
+				color: black;
+				background: aquamarine;
+				padding: 0px;
+				height: 30px;
+				border: none;
+				cursor: pointer;
+			}
+			
+			.dropdown {
+				position: relative;
+				display: inline-block;
+				z-index: 999;
+			}
+			
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: antiquewhite;
+				min-width: 210px;
+				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			}
+			
+			.dropdown-content a {
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+			
+			.dropdown-content a:hover {
+				background-color: #f1f1f1
+			}
+			
+			.dropdown:hover .dropdown-content {
+				display: block;
+			}
+			
+			.dropdown:hover .dropbtn {
+				background-color: burlywood;
+			}
+			
+			.dropdown-content {
+				left: 0;
+			}
+			
+			.dropbtn2 {
+				color: black;
+				background: aquamarine;
+				padding: 0px;
+				height: 30px;
+				border: none;
+				cursor: pointer;
+			}
+			
+			.dropdown2 {
+				position: relative;
+				z-index: 999;
+				display: inline-block;
+			}
+			
+			.dropdown-content2 {
+				display: none;
+				position: absolute;
+				background-color: antiquewhite;
+				min-width: 210px;
+				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			}
+			
+			.dropdown-content2 a {
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+			
+			.dropdown-content2 a:hover {
+				background-color: #f1f1f1
+			}
+			
+			.dropdown2:hover .dropdown-content2 {
+				display: block;
+			}
+			
+			.dropdown2:hover .dropbtn2 {
+				background-color: burlywood;
+			}
+			
+			.dropdown-content2 {
+				left: 0;
+			}
+			
+			.dropbtn3 {
+				color: black;
+				background: aquamarine;
+				padding: 0px;
+				height: 30px;
+				border: none;
+				cursor: pointer;
+			}
+			
+			.dropdown3 {
+				position: relative;
+				z-index: 999;
+				display: inline-block;
+			}
+			
+			.dropdown-content3 {
+				display: none;
+				position: absolute;
+				background-color: antiquewhite;
+				min-width: 210px;
+				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			}
+			
+			.dropdown-content3 a {
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+			
+			.dropdown-content3 a:hover {
+				background-color: #f1f1f1
+			}
+			
+			.dropdown3:hover .dropdown-content3 {
+				display: block;
+			}
+			
+			.dropdown3:hover .dropbtn3 {
+				background-color: burlywood;
+			}
+			
+			.dropdown-content3 {
+				left: 0;
+			}
+			
+			.dropbtn4 {
+				color: black;
+				background: aquamarine;
+				padding: 0px;
+				height: 30px;
+				border: none;
+				cursor: pointer;
+			}
+			
+			.dropdown4 {
+				position: relative;
+				z-index: 999;
+				display: inline-block;
+			}
+			
+			.dropdown-content4 {
+				display: none;
+				position: absolute;
+				background-color: antiquewhite;
+				min-width: 210px;
+				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			}
+			
+			.dropdown-content4 a {
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+			
+			.dropdown-content4 a:hover {
+				background-color: #f1f1f1
+			}
+			
+			.dropdown4:hover .dropdown-content4 {
+				display: block;
+			}
+			
+			.dropdown4:hover .dropbtn4 {
+				background-color: burlywood;
+			}
+			
+			.dropdown-content4 {
+				left: 0;
+			}
+			
+			.dropbtn5 {
+				color: black;
+				background: aquamarine;
+				padding: 0px;
+				height: 30px;
+				border: none;
+				cursor: pointer;
+			}
+			
+			.dropdown5 {
+				position: relative;
+				z-index: 999;
+				display: inline-block;
+			}
+			
+			.dropdown-content5 {
+				display: none;
+				position: absolute;
+				background-color: antiquewhite;
+				min-width: 210px;
+				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			}
+			
+			.dropdown-content5 a {
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+			
+			.dropdown-content5 a:hover {
+				background-color: #f1f1f1
+			}
+			
+			.dropdown5:hover .dropdown-content5 {
+				display: block;
+			}
+			
+			.dropdown5:hover .dropbtn5 {
+				background-color: burlywood;
+			}
+			
+			.dropdown-content5 {
+				left: 0;
+			}
+			
+			.dropbtn6 {
+				color: black;
+				background: aquamarine;
+				padding: 0px;
+				height: 30px;
+				border: none;
+				cursor: pointer;
+			}
+			
+			.dropdown6 {
+				position: relative;
+				z-index: 999;
+				display: inline-block;
+			}
+			
+			.dropdown-content6 {
+				display: none;
+				position: absolute;
+				background-color: antiquewhite;
+				min-width: 210px;
+				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			}
+			
+			.dropdown-content6 a {
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+			
+			.dropdown-content6 a:hover {
+				background-color: #f1f1f1
+			}
+			
+			.dropdown6:hover .dropdown-content6 {
+				display: block;
+			}
+			
+			.dropdown6:hover .dropbtn6 {
+				background-color: burlywood;
+			}
+			
+			.dropdown-content6 {
+				left: 0;
+			}
+			
+			.dropbtn7 {
+				color: black;
+				background: aquamarine;
+				padding: 0px;
+				height: 30px;
+				border: none;
+				cursor: pointer;
+			}
+			
+			.dropdown7 {
+				position: relative;
+				z-index: 999;
+				display: inline-block;
+			}
+			
+			.dropdown-content7 {
+				display: none;
+				position: absolute;
+				background-color: antiquewhite;
+				min-width: 210px;
+				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			}
+			
+			.dropdown-content7 a {
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+			
+			.dropdown-content7 a:hover {
+				background-color: #f1f1f1
+			}
+			
+			.dropdown7:hover .dropdown-content7 {
+				display: block;
+			}
+			
+			.dropdown7:hover .dropbtn6 {
+				background-color: burlywood;
+			}
+			
+			.dropdown-content7 {
+				left: 0;
+			}
+			
+			.dropbtn8 {
+				color: black;
+				background: aquamarine;
+				padding: 0px;
+				height: 30px;
+				border: none;
+				cursor: pointer;
+			}
+			
+			.dropdown8 {
+				position: relative;
+				z-index: 999;
+				display: inline-block;
+			}
+			
+			.dropdown-content8 {
+				display: none;
+				position: absolute;
+				background-color: antiquewhite;
+				min-width: 210px;
+				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			}
+			
+			.dropdown-content8 a {
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+			
+			.dropdown-content8 a:hover {
+				background-color: #f1f1f1
+			}
+			
+			.dropdown8:hover .dropdown-content8 {
+				display: block;
+			}
+			
+			.dropdown8:hover .dropbtn8 {
+				background-color: burlywood;
+			}
+			
+			.dropdown-content8 {
+				left: 0;
+			}
+			
+			.dropbtn9 {
+				color: black;
+				background: aquamarine;
+				padding: 0px;
+				height: 30px;
+				border: none;
+				cursor: pointer;
+			}
+			
+			.dropdown9 {
+				position: relative;
+				z-index: 999;
+				display: inline-block;
+			}
+			
+			.dropdown-content9 {
+				display: none;
+				position: absolute;
+				background-color: antiquewhite;
+				min-width: 210px;
+				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			}
+			
+			.dropdown-content9 a {
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+			
+			.dropdown-content9 a:hover {
+				background-color: #f1f1f1
+			}
+			
+			.dropdown9:hover .dropdown-content9 {
+				display: block;
+			}
+			
+			.dropdown9:hover .dropbtn9 {
+				background-color: burlywood;
+			}
+			
+			.dropdown-content9 {
+				left: 0;
+			}
+			
+			.dropbtn10 {
+				color: black;
+				background: aquamarine;
+				padding: 0px;
+				height: 30px;
+				border: none;
+				cursor: pointer;
+			}
+			
+			.dropdown10 {
+				position: relative;
+				z-index: 999;
+				display: inline-block;
+			}
+			
+			.dropdown-content10 {
+				display: none;
+				position: absolute;
+				background-color: antiquewhite;
+				min-width: 210px;
+				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			}
+			
+			.dropdown-content10 a {
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+			
+			.dropdown-content10 a:hover {
+				background-color: #f1f1f1
+			}
+			
+			.dropdown10:hover .dropdown-content10 {
+				display: block;
+			}
+			
+			.dropdown10:hover .dropbtn10 {
+				background-color: burlywood;
+			}
+			
+			.dropdown-content10 {
+				left: 0;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<div id="container" class="text-center">
+			<img src="img/lALPDgQ9yIA4n9gUFA_20_20.png" />
+			<a href="http://guozhivip.com/eat/">在校生&nbsp;&nbsp;</a>
+			<img src="img/lALPDgQ9yIA4n9gUFA_20_20.png" />
+			<a href="http://guozhivip.com/eat/">教职工&nbsp;&nbsp;</a>
+			<img src="img/lALPDgQ9yIA4n9gUFA_20_20.png" />
+			<a href="http://guozhivip.com/eat/">未来生&nbsp;&nbsp;</a>
+			<img src="img/lALPDgQ9yIA4n9gUFA_20_20.png" />
+			<a href="http://guozhivip.com/eat/">校友&nbsp;&nbsp;</a>
+			<img src="img/lALPDgQ9yIA4n9gUFA_20_20.png" />
+			<a href="http://guozhivip.com/eat/">访客&nbsp;&nbsp;</a>
+			<img src="img/lALPDgQ9yIA-N8oUFA_20_20.png" />
+			<a href="http://guozhivip.com/eat/">校内通道&nbsp;&nbsp;</a>
+			<img src="img/lALPDgQ9yIA-N8oUFA_20_20.png" />
+			<a href="http://guozhivip.com/eat/">终端防护&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input id="kuang" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="http://guozhivip.com/eat/">English</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="http://guozhivip.com/eat/">手机版</a>
+		</div>
+
+		<div id="erkuang" class="text-center">
+			<a href=""><img id="tu" src="img/nuc.png" .png/></a>
+		</div>
+
+		<div id="container" class="text-center">
+			<h4>
+				<a href="http://guozhivip.com/eat/" style="color: #000000;">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		
+		
+<div class="dropdown">	
+  <button class="dropbtn"><h4>学校概况&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4></button>
+			<div class="dropdown-content">
+				<a href="http://guozhivip.com/eat/">学校简历</a>
+				<a href="http://guozhivip.com/eat/">学校章程</a>
+				<a href="http://guozhivip.com/eat/">历史沿革</a>
+				<a href="http://guozhivip.com/eat/">历代领导</a>
+				<a href="http://guozhivip.com/eat/">现任领导</a>
+				<a href="http://guozhivip.com/eat/">校长致辞</a>
+				<a href="http://guozhivip.com/eat/">学校标识</a>
+				<a href="http://guozhivip.com/eat/">杰出校友</a>
+				<a href="http://guozhivip.com/eat/">领导关怀</a>
+				<a href="http://guozhivip.com/eat/">校园风光</a>
+			</div>
+		</div>
+
+		<div class="dropdown2">
+			<button class="dropbtn2"><h4>组织机构&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4></button>
+			<div class="dropdown-content2">
+				<a href="http://guozhivip.com/eat/">党政管理机构</a>
+				<a href="http://guozhivip.com/eat/">群团组织</a>
+				<a href="http://guozhivip.com/eat/">直属机构</a>
+				<a href="http://guozhivip.com/eat/">附属单位</a>
+				<a href="http://guozhivip.com/eat/">研究机构</a>
+
+			</div>
+		</div>
+
+		<div class="dropdown3">
+			<button class="dropbtn3"><h4>教学机构&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4></button>
+			<div class="dropdown-content3">
+				<a href="http://guozhivip.com/eat/">机电工程学院</a>
+				<a href="http://guozhivip.com/eat/">机械工程学院</a>
+				<a href="http://guozhivip.com/eat/">材料科学与工程学院</a>
+				<a href="http://guozhivip.com/eat/">化学工程与技术学院</a>
+				<a href="http://guozhivip.com/eat/">信息与通信工程学院</a>
+				<a href="http://guozhivip.com/eat/">仪器与电子学院</a>
+				<a href="http://guozhivip.com/eat/">大数据学院</a>
+				<a href="http://guozhivip.com/eat/">理学院</a>
+				<a href="http://guozhivip.com/eat/">经济与管理学院</a>
+				<a href="http://guozhivip.com/eat/">人文社会科学学院</a>
+				<a href="http://guozhivip.com/eat/">体育学院</a>
+				<a href="http://guozhivip.com/eat/">艺术学院</a>
+				<a href="http://guozhivip.com/eat/">软件学院</a>
+				<a href="http://guozhivip.com/eat/">环境与安全工程学院</a>
+				<a href="http://guozhivip.com/eat/">电气与控制工程学院</a>
+				<a href="http://guozhivip.com/eat/">能源动力工程学院</a>
+				<a href="http://guozhivip.com/eat/">研究生院</a>
+				<a href="http://guozhivip.com/eat/">国际教育学院</a>
+				<a href="http://guozhivip.com/eat/">马克思主义学院</a>
+				<a href="http://guozhivip.com/eat/">继续教育学院</a>
+				<a href="http://guozhivip.com/eat/">国防教育学院</a>
+				<a href="http://guozhivip.com/eat/">朔州校区</a>
+				<a href="http://guozhivip.com/eat/">信息商务学院</a>
+				<a href="http://guozhivip.com/eat/">国家级教学示范中心</a>
+
+			</div>
+		</div>
+
+		<div class="dropdown4">
+			<button class="dropbtn4"><h4>教育教学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4></button>
+			<div class="dropdown-content4">
+				<a href="http://guozhivip.com/eat/">本科生教育</a>
+				<a href="http://guozhivip.com/eat/">研究生教育</a>
+				<a href="http://guozhivip.com/eat/">留学生教育</a>
+				<a href="http://guozhivip.com/eat/">继续教育</a>
+
+			</div>
+		</div>
+
+		<div class="dropdown5">
+			<button class="dropbtn5"><h4>科学研究&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4></button>
+			<div class="dropdown-content5">
+				<a href="http://guozhivip.com/eat/">科研概况</a>
+				<a href="http://guozhivip.com/eat/">科研平台</a>
+				<a href="http://guozhivip.com/eat/">科研队伍</a>
+				<a href="http://guozhivip.com/eat/">科技成果</a>
+				<a href="http://guozhivip.com/eat/">产学研合作</a>
+				<a href="http://guozhivip.com/eat/">研究机构</a>
+				<a href="http://guozhivip.com/eat/">学术期刊</a>
+				<a href="http://guozhivip.com/eat/">科学技术研究院</a>
+				<a href="http://guozhivip.com/eat/">国家大学科技园</a>
+
+			</div>
+		</div>
+
+		<div class="dropdown6">
+			<button class="dropbtn6"><h4>学科建设&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4></button>
+			<div class="dropdown-content6">
+				<a href="http://guozhivip.com/eat/">学科概况</a>
+				<a href="http://guozhivip.com/eat/">重点学科</a>
+				<a href="http://guozhivip.com/eat/">本科专业</a>
+				<a href="http://guozhivip.com/eat/">硕士学位授予一级学科</a>
+				<a href="http://guozhivip.com/eat/">博士学位授予一级学科</a>
+				<a href="http://guozhivip.com/eat/">博士后流动站</a>
+
+			</div>
+		</div>
+
+		<div class="dropdown7">
+			<button class="dropbtn7"><h4>师资队伍&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4></button>
+			<div class="dropdown-content7">
+				<a href="http://guozhivip.com/eat/">师资概况</a>
+				<a href="http://guozhivip.com/eat/">两院院士</a>
+				<a href="http://guozhivip.com/eat/">杰出人才</a>
+				<a href="http://guozhivip.com/eat/">学科带头人</a>
+				<a href="http://guozhivip.com/eat/">博士生导师</a>
+				<a href="http://guozhivip.com/eat/">硕士生导师</a>
+				<a href="http://guozhivip.com/eat/">招才引智</a>
+
+			</div>
+		</div>
+
+		<div class="dropdown8">
+			<button class="dropbtn8"><h4>招生就业&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4></button>
+			<div class="dropdown-content8">
+				<a href="http://guozhivip.com/eat/">本科生招生</a>
+				<a href="http://guozhivip.com/eat/">研究生招生</a>
+				<a href="http://guozhivip.com/eat/">继续教育招生</a>
+				<a href="http://guozhivip.com/eat/">留学生招生</a>
+				<a href="http://guozhivip.com/eat/">本科生就业</a>
+				<a href="http://guozhivip.com/eat/">研究生就业</a>
+
+			</div>
+		</div>
+
+		<div class="dropdown9">
+			<button class="dropbtn9"><h4>合作交流&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4》></h4></button>
+			<div class="dropdown-content9">
+				<a href="http://guozhivip.com/eat/">国际交流</a>
+				<a href="http://guozhivip.com/eat/">国内交流</a>
+				<a href="http://guozhivip.com/eat/">校友会</a>
+				<a href="http://guozhivip.com/eat/">继续发展基金会</a>
+
+			</div>
+		</div>
+
+		<div class="dropdown10">
+			<button class="dropbtn10"><h4>朔州校区&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4></button>
+
+		</div>
+		</div>
+
+		</div>
+
+		<div id="demo" class="carousel slide" data-ride="carousel">
+
+			<!-- 指示符 -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+
+			<!-- 轮播图片 -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/1621085490440.jpeg">
+				</div>
+				<div class="carousel-item">
+					<img src="img/1621085490440.jpeg">
+				</div>
+				<div class="carousel-item">
+					<img src="img/1621085490440.jpeg">
+				</div>
+			</div>
+
+			<!-- 左右切换按钮 -->
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+
+		</div>
+<div style="background-image:url(img/800004877.jpg);color: black;">	
+<div  style="margin-left: 280px; border:3px solid lightgray; width:1210px ; height: 460px;background:#FFFFFF;">
+		<div  style="width: 847px;height: 477px; float: left; margin-top:5px;">
+			<h1>中北新闻</h1>
+			<div>
+				<div id="zuo">
+					<img src="img/QQ图片.jpg" width="300px" height="300px" />
+					<h3 align="middle"><a href="http://guozhivip.com/eat/">副省长于英杰来校调研</a></h3>
+					<h4>
+&nbsp;&nbsp;8月3日，山西省副省长于英杰来校就科技工作进行调研。省科技厅厅长卫英慧、省教育厅副厅长马骏及省政府办公厅副主任杨锦耀、调研处处长曾军顺等陪...</h4>
+
+					<h5 align="right">06.5</h5>
+				</div>
+
+				<div style="margin-left: 310px;">
+					<table border="1px solid red" >
+						<tr style="height: 60px;">
+
+							<td>
+								<h2>08.06<h2></td>		
+		<td colspan="5" ><h2><a href="http://guozhivip.com/eat/">  关于近期学校网络升级调优时间安排及断网通知</a></h2></td>
+
+						</tr>
+						<tr style="height: 60px;">
+	
+		<td ><h2>08.06<h2></td>		
+		<td colspan=" 5 " ><h2><a href="http://guozhivip.com/eat/"> 关于近期学校网络升级调优时间安排及断网通知</a></h2></td>
+		
+	</tr><tr style="height: 60px;">
+
+							<td>
+								<h2>08.06<h2></td>		
+		<td colspan="5" ><h2><a href="http://guozhivip.com/eat/"> 关于近期学校网络升级调优时间安排及断网通知</a></h2></td>
+
+						</tr>
+						<tr style="height: 60px;">
+	
+		<td ><h2>08.06<h2></td>		
+		<td colspan=" 5 " ><h2><a href="http://guozhivip.com/eat/"> 关于近期学校网络升级调优时间安排及断网通知</a></h2></td>
+		
+	</tr><tr style="height: 60px;">
+
+							<td>
+								<h2>08.06<h2></td>		
+		<td colspan="5" ><h2><a href="http://guozhivip.com/eat/"> 关于近期学校网络升级调优时间安排及断网通知</a></h2></td>
+
+						</tr>
+						<tr style="height: 60px;">
+	
+		<td ><h2>08.06<h2></td>		
+		<td colspan=" 5 " ><h2><a href="http://guozhivip.com/eat/"> 关于近期学校网络升级调优时间安排及断网通知</a></h2></td>
+		
+	</tr></table>
+</div>
+	
+	
+	
+	
+	
+	
+</div>	
+</div>
+<div style="margin-left: 320px; margin-top: 10px;">
+	
+    <h1>通知公告</h1>
+					<table border="1px solid red">
+						<tr style="height: 60px;">
+
+							<td>
+								<h2>08.06<h2></td>		
+		<td colspan="5" ><h2><a href="http://guozhivip.com/eat/">我校与大同市新荣区签署省校合作框架协议 </a>  </h2></td>
+
+						</tr>
+						<tr style="height: 60px;">
+	
+		<td ><h2>08.06<h2></td>		
+		<td colspan=" 5 " ><h2><a href="http://guozhivip.com/eat/">我校与大同市新荣区签署省校合作框架协议</a> </h2></td>
+		
+	</tr><tr style="height: 60px;">
+
+							<td>
+								<h2>08.06<h2></td>		
+		<td colspan="5" ><h2><a href="http://guozhivip.com/eat/">我校与大同市新荣区签署省校合作框架协议</a> </h2></td>
+
+						</tr>
+						<tr style="height: 60px;">
+	
+		<td ><h2>08.06<h2></td>		
+		<td colspan=" 5 " ><h2><a href="http://guozhivip.com/eat/">我校与大同市新荣区签署省校合作框架协议</a> </h2></td>
+		
+	</tr><tr style="height: 60px;">
+
+							<td>
+								<h2>08.06<h2></td>		
+		<td colspan="5" ><h2><a href="http://guozhivip.com/eat/">我校与大同市新荣区签署省校合作框架协议</a> </h2></td>
+
+						</tr>
+						<tr style="height: 60px;">
+	
+		<td ><h2>08.06<h2></td>		
+		<td colspan=" 5 " ><h2><a href="http://guozhivip.com/eat/">我校与大同市新荣区签署省校合作框架协议</a> </h2></td>
+		
+	</tr></table>
+</div>
+	
+</div>	
+</div>
+
+
+
+<div style="background-image:url(img/800004877.jpg);width:100%;height: 380px;">
+<div  style="background-image:url(img/800004877.jpg); vertical-align: middle; float: left; margin-left: 280px;" >
+<div style="margin-left: 120px;float: left;"><a href="http://guozhivip.com/eat/"><img style="vertical-align: middle; width: 200px; height: 160px;" src="img/1621085400123.jpeg" /></a></div> 
+<div style="margin-left: 20px; float:left;"><a href="http://guozhivip.com/eat/"><img style="vertical-align: middle; width: 200px; height: 160px;" src="img/1621085400123.jpeg" /></a></div> 
+<div style="margin-left: 20px;float: left;"><a href="http://guozhivip.com/eat/"><img style="vertical-align: middle; width: 200px; height: 160px;" src="img/1621085400123.jpeg" /></a></div> 
+<div style="margin-left: 20px;float: left;"><a href="http://guozhivip.com/eat/"><img style="vertical-align: middle; width: 200px; height: 160px;" src="img/1621085400123.jpeg" /></a></div> <br />
+<div style="margin-left: 120px;margin-top:30px;float: left;"><a href="http://guozhivip.com/eat/"><img style="vertical-align: middle; width: 200px; height: 120px;" src="img/1621085400123.jpeg" /></a></div>  
+<div style="margin-left: 20px;margin-top:30px;float: left;"><a href="http://guozhivip.com/eat/"><img style="vertical-align: middle; width: 200px; height: 120px;" src="img/1621085400123.jpeg" /></a></div>  
+<div style="margin-left: 20px;margin-top:30px;float:left;"><a href="http://guozhivip.com/eat/"><img style="vertical-align: middle; width: 200px; height: 120px;" src="img/1621085400123.jpeg" /></a></div>  
+<div style="margin-left: 20px;margin-top:30px;float: left;"><a href="http://guozhivip.com/eat/"><img style="vertical-align: middle; width: 200px; height: 120px;" src="img/1621085400123.jpeg" /></a></div>  
+	
+</div>
+</div>
+
+<div>
+<div style="margin-top: 60px;margin-left:200px;float: left;">
+	<img src="img/nuc.png" style="width: 200px;height: 80px;"/>
+	<div style="margin-left:30px ;">
+		<img src="img/qq.png" />
+		<img src="img/weixin.png" />
+	</div>
+	
+</div>
+
+<div style="margin-top: 60px;margin-left: 200px ; float: left;">
+	<table>
+		<tr><h2> 常用链接<h2> </tr>
+		<tr>
+			<td><h3>国家自然基金委</h3></td>
+			<td><h3>科技部</h3></td>
+			<td><h3> 航天科技集团<h3> </td>
+		</tr>
+		<tr><td><h3> 工业与信息化部<h3></td>
+			<td><h3>教育部<h3></td>
+			<td ><h3>航天科工集团<h3></td>
+		</tr>
+		<tr><td><h3>国家国防科工局<h3></td>
+			<td><h3>科技厅<h3></td>
+			<td><h3>兵器工业集团<h3></td>
+		</tr>
+		<tr><td><h3>武器信息装备网<h3></td>
+			<td><h3>教育厅<h3></td>
+			<td><h3>兵器装备集团<h3></td>
+		</tr>
+	</table>
+	
+	
+	
+</div>
+<div style="margin-top: 60px;margin-left:200px;float: left;">
+	<table>
+	<tr><h2>常用服务</h2></tr>
+	<tr>
+		<td><h3>在线课程中心&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h3></td>
+		<td><h3>就业在线<h3></td>
+		
+	</tr>
+	<tr>
+		<td><h3>本科生查询<h3></td>
+		<td><h3>学报投稿<h3></td>
+	</tr>
+	<tr>
+		<td><h3>研究生查询<h3></td>
+		<td><h3>后勤服务<h3></td>
+	</tr>
+	</table>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+
+</html>
